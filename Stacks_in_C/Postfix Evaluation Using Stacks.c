@@ -18,8 +18,7 @@
 
 // Struct of Stack
 struct stack{
-    int top;
-    int array[CAPACITY];
+    int top;2    int array[CAPACITY];
 }s;
 
 // Push new element to the Stack
@@ -58,8 +57,8 @@ void postfixEvaluation(char postfix[]){
             Push(postfix[i] - '0');
         }
         else{
-            int val1 = Pop();
-            int val2 = Pop();
+            int val2 = Pop();//correction done changing of the val1 to val2
+            int val1 = Pop();///correction done
             ]switch(postfix[i]){
                 case '+':{
                     Push(val1 + val2);
